@@ -1,5 +1,9 @@
 /* Reset some default styles */
-body, h1, h2, h3, p {
+body,
+h1,
+h2,
+h3,
+p {
     margin: 0;
     padding: 0;
 }
@@ -39,7 +43,8 @@ section {
 }
 
 /* Style for individual sections */
-#about, #contact {
+#about,
+#contact {
     background-color: #f4f4f4;
 }
 
@@ -52,4 +57,78 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    font-size: smaller;
+}
+
+#product {
+    background: #f0e8d9f6;
+    text-align: center;
+}
+
+
+.productsGroup,
+#recipeGroup {
+    display: flex;
+    background: #f0e8d9f6;
+
+}
+
+#productName,
+#recipeName {
+    background: #e0af9181;
+    color: #654343e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+    /* Adjust the height as needed */
+}
+
+#product01Img,
+#product02Img,
+#product03Img,
+#product04Img,
+#recipe01Img,
+#recipe02Img,
+#recipe03Img,
+#recipe04Img,
+#recipe05Img {
+    margin-left: 10%;
+    /* Optional: Add styles for each individual div */
+    flex: 1;
+}
+
+#product01Text,
+#product02Text,
+#product03Text,
+#product04Text,
+#recipe01Text,
+#recipe02Text,
+#recipe03Text,
+#recipe04Text,
+#recipe05Text {
+    margin-right: 10%;
+    /* Optional: Add styles for each individual div */
+    flex: 1;
+}
+
+
+.navGroup {
+    display: flex;
+    background: #333;
+
+}
+
+#nav-left {
+    flex: 1;
+    text-align: left;
+    margin-left: 1%;
+}
+
+#logo-right {
+    flex: 1;
+    text-align: right;
+    margin-right: 2%;
+
+
 }
