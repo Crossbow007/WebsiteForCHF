@@ -2,7 +2,6 @@
 body,
 h1,
 h2,
-h3,
 p {
     margin: 0;
     padding: 0;
@@ -15,9 +14,9 @@ body {
 }
 
 header {
-    background: #333;
+    background: #ffffff;
     color: #fff;
-    padding: 10px 0;
+
 }
 
 header h1 {
@@ -34,7 +33,7 @@ nav ul#nav-list li {
 }
 
 nav ul#nav-list li a {
-    color: #fff;
+    color: #862633;
     text-decoration: none;
 }
 
@@ -61,22 +60,27 @@ footer {
 }
 
 #product {
-    background: #f0e8d9f6;
+    background: #f2e9db;
+    color: #862633;
     text-align: center;
+    padding: 0%;
+
+
 }
 
 
 .productsGroup,
 #recipeGroup {
     display: flex;
-    background: #f0e8d9f6;
+    background: #f2e9db;
 
 }
 
 #productName,
 #recipeName {
     background: #e0af9181;
-    color: #654343e2;
+    color: #862633;
+    ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,7 +97,7 @@ footer {
 #recipe03Img,
 #recipe04Img,
 #recipe05Img {
-    margin-left: 10%;
+    margin-left: 20%;
     /* Optional: Add styles for each individual div */
     flex: 1;
 }
@@ -107,7 +111,8 @@ footer {
 #recipe03Text,
 #recipe04Text,
 #recipe05Text {
-    margin-right: 10%;
+    color: #862633;
+    margin-right: 20%;
     /* Optional: Add styles for each individual div */
     flex: 1;
 }
@@ -115,7 +120,9 @@ footer {
 
 .navGroup {
     display: flex;
-    background: #333;
+    background: #ffffff;
+    color: #862633;
+    /* font-family: cursive; */
 
 }
 
@@ -131,4 +138,10 @@ footer {
     margin-right: 2%;
 
 
+}
+
+h3 {
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
 }
