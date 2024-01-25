@@ -1,12 +1,12 @@
 /* Reset some default styles */
 body,
 h1,
-h2{
+h2 {
     margin: 0;
     padding: 0;
 }
 
-p{
+p {
     padding: 2px;
 }
 
@@ -16,11 +16,11 @@ body {
     line-height: 1.6;
 }
 
-header{
+header {
     padding-bottom: 2em;
 }
 
-#company-name{
+#company-name {
     margin-left: 50px;
     font-weight: bolder;
     font-size: 2em;
@@ -33,17 +33,17 @@ header{
     background: #ffffff;
     color: #862633;
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
     padding: 0 30px;
     margin-top: 30px;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0; 
-    margin: 0; 
-    display: flex; 
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 nav ul li {
@@ -57,7 +57,8 @@ nav ul li a {
 }
 
 #burger-menu {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     cursor: pointer;
 }
 
@@ -129,9 +130,13 @@ footer {
 #recipe03Img,
 #recipe04Img,
 #recipe05Img {
-    margin-left: 20%;
+    /* margin-left: 20%; */
     /* Optional: Add styles for each individual div */
-    flex: 1;
+    /* flex: 1; */
+    /* display: flex; */
+    text-align: center;
+    width: 30vw;
+
 }
 
 #product01Text,
@@ -144,9 +149,13 @@ footer {
 #recipe04Text,
 #recipe05Text {
     color: #862633;
-    margin-right: 20%;
+    margin-top: 5%;
+
     /* Optional: Add styles for each individual div */
-    flex: 1;
+    /* flex: 1; */
+    display: flex;
+    text-align: left;
+    width: 70vw;
 }
 
 
@@ -165,36 +174,36 @@ h3 {
     max-width: 60%;
     align-items: center;
     gap: 5px;
-  }
-  
-  /*Box for message section in contact us form*/
-  .message {
+}
+
+/*Box for message section in contact us form*/
+.message {
     height: 44px;
     max-width: 60%;
     align-items: center;
     gap: 5px;
-  }
-  
-  /*The submit button itself*/
-  .submitButton {
+}
+
+/*The submit button itself*/
+.submitButton {
     display: flex;
     width: 200px;
     color: white;
     align-items: center;
     border-radius: 30px;
     height: 22px;
-  }
-  
-  /*The box for the entire contact us form BOX.*/
-  .contactUs {
+}
+
+/*The box for the entire contact us form BOX.*/
+.contactUs {
     background-color: #e0af9181;
     align-items: center;
     height: 300px;
     /* border-radius: 30px; to get those lovely rounded corners */
-  }
-  
-  /*separate rules for the form itself*/
-  .contactUs form {
+}
+
+/*separate rules for the form itself*/
+.contactUs form {
     width: 100%;
     height: 100%;
     display: flex;
@@ -202,63 +211,64 @@ h3 {
     justify-content: space-around;
     align-items: center;
     color: black;
-  }
-  
-  /*Rules for all 3 inputs, to align*/
-  .nameEmail,
-  .message {
+}
+
+/*Rules for all 3 inputs, to align*/
+.nameEmail,
+.message {
     width: 100%;
     display: flex;
     justify-content: center;
-  }
-  
-  /*Input box for Name and email sections. Note the flatter corners=smaller border radius*/
-  .nameEmail input {
+}
+
+/*Input box for Name and email sections. Note the flatter corners=smaller border radius*/
+.nameEmail input {
     width: 60%;
     border-radius: 7px;
     height: 22px;
     flex-grow: 2;
-  }
-  
-  /*Same deal. Double the height as name and email*/
-  .message input {
+}
+
+/*Same deal. Double the height as name and email*/
+.message input {
     width: 60%;
     border-radius: 7px;
     height: 44px;
     flex-grow: 2;
-  }
-  
+}
 
 
 
 
-  /* Media query for mobile devices */
+
+/* Media query for mobile devices */
 @media (max-width: 768px) {
     #company-name {
-        display: none; /* Hide company name on mobile */
+        display: none;
+        /* Hide company name on mobile */
     }
-    
+
     #burger-menu {
         display: block;
         margin-right: -70%;
     }
-    
+
     nav ul {
-        flex-direction: column; 
+        flex-direction: column;
         position: absolute;
         top: 20%;
         left: -100%;
-        width: 100%; 
-        background-color: #fff; 
-        transition: left 0.3s; 
-        
+        width: 100%;
+        background-color: #fff;
+        transition: left 0.3s;
+
     }
-    
+
     nav ul li {
         text-align: center;
-        padding: 10px 0; 
+        padding: 10px 0;
     }
-    
+
     nav ul li a {
         color: #862633;
     }
