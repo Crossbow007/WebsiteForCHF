@@ -241,18 +241,42 @@ h3 {
 /*ADMIN LOGIN*/
 /*LOGIN PAGE */
 
-body { font-family: Arial, sans-serif; }
-.container { max-width: 300px; margin: 50px auto; padding: 20px; border: 1px solid #ccc; }
-input[type="text"], input[type="password"], input[type="submit"] { width: 100%; padding: 10px; margin: 10px 0; }
-input[type="submit"] { background-color: blue; color: white; border: none; cursor: pointer; }
-input[type="submit"]:hover { opacity: 0.8; }
-
-
-.database-view{
-    margin: 50px auto; 
+body {
+    font-family: Arial, sans-serif;
 }
 
-#login-div{
+.container {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+input[type="submit"] {
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+
+.database-view {
+    margin: 50px auto;
+}
+
+#login-div {
     float: right;
     padding-right: 2%;
 }
@@ -290,4 +314,192 @@ input[type="submit"]:hover { opacity: 0.8; }
     nav ul li a {
         color: #862633;
     }
+}
+
+/* for index page --Xiaowei Wang*/
+.textStyleInHomePage {
+    font-size: larger;
+    font-weight: bold;
+    color: brown;
+}
+
+.fieldsettop {
+    border-radius: 0.75em;
+    border-color: brown;
+    margin-top: 0.5em;
+}
+
+.divlevel1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.divlevel2-left {
+    border: 0.2 solid blueviolet;
+    flex: 1;
+    margin-right: 1em;
+    /* display: flex; */
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.divlevel2-right {
+    border: 0.2 solid blueviolet;
+    flex: 3;
+}
+
+.Titleword {
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: brown;
+}
+
+#introductionforCHF {
+    font-size: x-large;
+    color: rgb(80, 67, 75);
+}
+
+.imgstyleA {
+    height: 20em;
+    width: 20em;
+}
+
+.imgstyleB {
+    height: 8.5em;
+    width: 8.5em;
+    flex: 1;
+}
+
+.imgstyleC {
+    height: 14em;
+    width: 5em;
+    flex: 1;
+}
+
+.producttext {
+    font-size: x-large;
+    font-weight: bolder;
+    color: #333;
+}
+
+
+/* pictures */
+* {
+    box-sizing: border-box;
+}
+
+.slider {
+    width: 560px;
+    height: 400px;
+    overflow: hidden;
+}
+
+
+
+
+.slider-wrapper,
+.slider-wrapper1,
+.slider-wrapper2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 320px;
+}
+
+.slider-wrapper img,
+.slider-wrapper1 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+.slider-wrapper2 img {
+    width: 40%;
+    height: 90%;
+    display: block;
+
+
+}
+
+
+
+.slider-footer,
+.slider-footer1,
+.slider-footer2 {
+    height: 80px;
+    background-color: rgb(100, 67, 68);
+    padding: 12px 12px 0 12px;
+    position: relative;
+}
+
+.slider-footer .toggle {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    display: flex;
+}
+
+.slider-footer .toggle button,
+.slider-footer1 .toggle button,
+.slider-footer2 .toggle button {
+    margin-right: 12px;
+    width: 28px;
+    height: 28px;
+    appearance: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.slider-footer .toggle button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.slider-footer p,
+.slider-footer1 p,
+.slider-footer2 p {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.slider-indicator,
+.slider-indicator1,
+.slider-indicator2 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.slider-indicator li,
+.slider-indicator1 li,
+.slider-indicator2 li {
+    width: 8px;
+    height: 8px;
+    margin: 4px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.slider-indicator li.active,
+.slider-indicator1 li.active,
+.slider-indicator2 li.active {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
 }
