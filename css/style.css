@@ -238,7 +238,24 @@ h3 {
     flex-grow: 2;
 }
 
+/*ADMIN LOGIN*/
+/*LOGIN PAGE */
 
+body { font-family: Arial, sans-serif; }
+.container { max-width: 300px; margin: 50px auto; padding: 20px; border: 1px solid #ccc; }
+input[type="text"], input[type="password"], input[type="submit"] { width: 100%; padding: 10px; margin: 10px 0; }
+input[type="submit"] { background-color: blue; color: white; border: none; cursor: pointer; }
+input[type="submit"]:hover { opacity: 0.8; }
+
+
+.database-view{
+    margin: 50px auto; 
+}
+
+#login-div{
+    float: right;
+    padding-right: 2%;
+}
 
 
 

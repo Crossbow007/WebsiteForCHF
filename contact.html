@@ -9,6 +9,9 @@
 
   <body>
     <script src="./script/script.js"></script>
+        <div id="login-div">
+        <a href="/login.php">Login</a>
+    </div>
     <header>
         <div class="navGroup">
             <div id="logo-left">
@@ -46,22 +49,21 @@
 
     <div class="contactUs">
       <!--Box for form itself. Inputs will be separate. This was the hardest section to get to work -->
-      <form action="">
+      <form id="contactForm" onsubmit="submitForm(event)">
         <!-- <div class="singleInputProperties" This didn't work, hence why it's commented out> -->
         <section class="nameEmail">
           <label for="name">Name:</label>
           <!--Separate boxes, but same properties for name and email boxes -->
-          <input type="text" name="name" id="name" />
+          <input type="text" name="name" id="name" required />
         </section>
         <!--Separate boxes for the inputs. Took a while to figue that out. -->
         <section class="nameEmail">
           <label for="email">Email:</label>
-          <input type="text" name="email" id="email" />
+          <input type="text" name="email" id="email" required />
         </section>
         <section class="message">
           <label for="message">Message:</label>
-          <!--Same as name email, but double height. See CSS -->
-          <input type="text" name="message" id="message" />
+          <textarea name="message" id="message" required></textarea>
         </section>
 
         <div class="submitButton">
@@ -75,5 +77,34 @@
     <footer>
       <p>&copy; 2024 C Health Food Technology Inc.</p>
     </footer>
+
+    <script>
+      function submitForm(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Create a new FormData object from the form
+        const formData = new FormData(document.getElementById('contactForm'));
+
+        // Send the form data to the server using fetch API
+        fetch('add.php', {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => {
+          if (response.ok) {
+            // If the response is ok, show the success message
+            alert('Submission completed');
+            document.getElementById('contactForm').reset(); // Clear the form
+          } else {
+            // If there's an error, show an error message
+            alert('Submission failed');
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          alert('An unexpected error occurred');
+        });
+      }
+    </script>
   </body>
 </html>
