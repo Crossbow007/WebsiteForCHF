@@ -170,35 +170,35 @@ h3 {
 /*CONTACT US*/
 /*Box for name and email section in contact us form*/
 .nameEmail {
-    height: 22px;
-    max-width: 60%;
-    align-items: center;
-    gap: 5px;
-}
-
-/*Box for message section in contact us form*/
-.message {
-    height: 44px;
-    max-width: 60%;
-    align-items: center;
-    gap: 5px;
-}
-
-/*The submit button itself*/
-.submitButton {
+    width: 20%;
     display: flex;
-    width: 200px;
-    color: white;
     align-items: center;
-    border-radius: 30px;
-    height: 22px;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.nameEmail label{
+    flex-basis: 20%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.nameEmail input,
+.nameEmail textarea {
+    flex-grow: 1; /* Allow input and textarea to grow and fill available space */
+    border-radius: 7px; /* Keep the border-radius consistent */
+    padding: 1.5em; /* Consistent padding */
+    height: 22px; /* Set a default height */
+}
+.nameEmail textarea {
+    width: 100%;
+    height: 10em;
 }
 
 /*The box for the entire contact us form BOX.*/
 .contactUs {
     background-color: #e0af9181;
     align-items: center;
-    height: 300px;
     /* border-radius: 30px; to get those lovely rounded corners */
 }
 
@@ -213,28 +213,21 @@ h3 {
     color: black;
 }
 
-/*Rules for all 3 inputs, to align*/
-.nameEmail,
-.message {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+input[type="submit"] {
+    background-color: #862633;
+    color: white;
+    font-size: large;
+    border: none;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    width: auto;
+    max-width: 200px;
+    margin-bottom: 2em;
 }
 
-/*Input box for Name and email sections. Note the flatter corners=smaller border radius*/
-.nameEmail input {
-    width: 60%;
-    border-radius: 7px;
-    height: 22px;
-    flex-grow: 2;
-}
-
-/*Same deal. Double the height as name and email*/
-.message input {
-    width: 60%;
-    border-radius: 7px;
-    height: 44px;
-    flex-grow: 2;
+input[type="submit"]:hover {
+    opacity: 0.8;
 }
 
 /*ADMIN LOGIN*/
@@ -251,24 +244,7 @@ body {
     border: 1px solid #ccc;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-}
 
-input[type="submit"] {
-    background-color: blue;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    opacity: 0.8;
-}
 
 
 .database-view {
