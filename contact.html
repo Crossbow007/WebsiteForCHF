@@ -1,110 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CHealthTech</title>
-    <link rel="stylesheet" href="./css/style.css">
-  </head>
 
-  <body>
-    <script src="./script/script.js"></script>
-        <div id="login-div">
-        <a href="/login.php">Login</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHealthTech</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <script src="./script/script.js"></script>
+  <div id="login-div">
+    <a href="/login.php">Login</a>
+  </div>
+  <header>
+    <div class="navGroup">
+      <div id="logo-left">
+        <img src="./imgs/logo.png" height="90" width="90" alt="brand" />
+        <span id="company-name">C Health Food Technology Inc.</span>
+      </div>
+      <!-- Burger menu icon -->
+      <div id="burger-menu">
+        <div class="burger-bar"></div>
+        <div class="burger-bar"></div>
+        <div class="burger-bar"></div>
+      </div>
+      <!-- Navigation links -->
+      <nav>
+        <ul id="nav-list">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/product.html">Products</a></li>
+          <li><a href="/recipe.html">Recipe</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
     </div>
-    <header>
-        <div class="navGroup">
-            <div id="logo-left">
-                <img src="./imgs/logo.png" height="90" width="80" alt="brand" />
-                <span id="company-name">C Health Food Technology Inc.</span>
-            </div>
-            <!-- Burger menu icon -->
-            <div id="burger-menu">
-                <div class="burger-bar"></div>
-                <div class="burger-bar"></div>
-                <div class="burger-bar"></div>
-            </div>
-            <!-- Navigation links -->
-            <nav>
-                <ul id="nav-list">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/product.html">Products</a></li>
-                    <li><a href="/recipe.html">Recipe</a></li>
-                    <li><a href="/contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-  
+  </header>
 
-    <section id="contact">
-      <img src="Contact Us- Map.png" alt="">
-      <h2>Contact Us</h2>
-      <p>Phone:306-370-7056</p>
-      <p>Email: info@chealthtech.com</p>
-      <p>Address: 53 Yonge Street, Kingston, ON K7M 6G4</p>
-    </section>
-
-    <h1>Send us a message!</h1>
-
-    <div class="contactUs">
-      <!--Box for form itself. Inputs will be separate. This was the hardest section to get to work -->
-      <form id="contactForm" onsubmit="submitForm(event)">
-        <!-- <div class="singleInputProperties" This didn't work, hence why it's commented out> -->
-        <section class="nameEmail">
-          <label for="name">Name:</label>
-          <!--Separate boxes, but same properties for name and email boxes -->
-          <input type="text" name="name" id="name" required />
-        </section>
-        <!--Separate boxes for the inputs. Took a while to figue that out. -->
-        <section class="nameEmail">
-          <label for="email">Email:</label>
-          <input type="text" name="email" id="email" required />
-        </section>
-        <section class="nameEmail">
-          <label for="message">Message:</label>
-          <textarea name="message" id="message" required></textarea>
-        </section>
-
-        <div class="submitButton">
-          <input type="submit" value="Submit Message" />
-        </div>
-        <!--Submit button -->
-        <!-- </div> -->
-      </form>
+  <div class="contact">
+    <div id="contactName">
+      <h3>Contact Us</h3>
     </div>
 
-    <footer>
-      <p>&copy; 2024 C Health Food Technology Inc.</p>
-    </footer>
+    <div class="ContactUsGroup">
+      <div id="contactImg">
+        <p><img src="./imgs/building.jpg" height="400" width="550"
+            alt="contactImg" /></p>
+      </div>
+      <div id="contactText">
 
-    <script>
-      function submitForm(event) {
-        event.preventDefault(); // Prevent the default form submission
+        <ur>
+          <li>Phone:306-370-7056</li>
+          <li>Email: info@chealthtech.com</li>
+          <li>Address: 53 Yonge Street, Kingston, ON K7M 6G4</li>
 
-        // Create a new FormData object from the form
-        const formData = new FormData(document.getElementById('contactForm'));
+        </ur>
 
-        // Send the form data to the server using fetch API
-        fetch('add.php', {
-          method: 'POST',
-          body: formData
-        })
-        .then(response => {
-          if (response.ok) {
-            // If the response is ok, show the success message
-            alert('Submission completed');
-            document.getElementById('contactForm').reset(); // Clear the form
-          } else {
-            // If there's an error, show an error message
-            alert('Submission failed');
-          }
-        })
-        .catch(error => {
-          console.error('Error:', error);
-          alert('An unexpected error occurred');
-        });
-      }
-    </script>
-  </body>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+  <!-- <section id="contact">
+    <img src="Contact Us- Map.png" alt="">
+    <h2>Contact Us</h2>
+    <p>Phone:306-370-7056</p>
+    <p>Email: info@chealthtech.com</p>
+    <p>Address: 53 Yonge Street, Kingston, ON K7M 6G4</p>
+  </section> -->
+
+
+
+  <div class="contactUs">
+    <div class="sendMsg">
+      <h3>Send us a message!</h3>
+    </div>
+
+    <!--Box for form itself. Inputs will be separate. This was the hardest section to get to work -->
+    <form id="contactForm" onsubmit="submitForm(event)">
+      <!-- <div class="singleInputProperties" This didn't work, hence why it's commented out> -->
+      <section class="nameEmail">
+        <label for="name">Name:</label>
+        <!--Separate boxes, but same properties for name and email boxes -->
+        <input type="text" name="name" id="name" required />
+      </section>
+      <!--Separate boxes for the inputs. Took a while to figue that out. -->
+      <section class="nameEmail">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" required />
+      </section>
+      <section class="message">
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" rows="10" cols="60"
+          placeholder="Type your message here..." required></textarea>
+      </section>
+
+      <div class="submitButton">
+        <input type="submit" value="Submit Message" />
+      </div>
+      <!--Submit button -->
+      <!-- </div> -->
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 C Health Food Technology Inc.</p>
+  </footer>
+
+</body>
+
 </html>

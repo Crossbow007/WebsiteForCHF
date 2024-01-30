@@ -21,13 +21,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-// 1. 初始数据
+// data
 const sliderData = [
     { url: './imgs/factory04.jpg', title: 'Outside building of factory ', color: 'rgb(172, 162, 147)' },
     { url: './imgs/factory03.jpg', title: 'Main entrance of factory', color: 'rgb(172, 162, 147)' },
-    { url: './imgs/factory05.jpg', title: 'HACCP standard operation', color: 'rgb(172, 162, 147)' },
+
     { url: './imgs/factory01.jpg', title: 'Inside  of factory', color: 'rgb(172, 162, 147)' },
     { url: './imgs/factory02.jpg', title: 'Meeting room', color: 'rgb(172, 162, 147)' },
+    { url: './imgs/factory05.jpg', title: 'HACCP standard operation', color: 'rgb(172, 162, 147)' },
     { url: './imgs/factory06.jpg', title: 'Auto sanitizer ', color: 'rgb(172, 162, 147)' },
     { url: './imgs/machine01.png', title: 'Noodle Maker', color: 'rgb(172, 162, 147)' },
 
@@ -65,8 +66,8 @@ function updateSlider() {
 
 
 const sliderData1 = [
-    { url: './imgs/bg01.jpg', title: 'Ingredients of Local garlic  ', color: 'rgb(172, 162, 147)' },
-    { url: './imgs/bg04.png', title: 'Europ potato starch', color: 'rgb(172, 162, 147)' },
+    { url: './imgs/bg01.jpg', title: 'Ingredients of Local garlic   ', color: 'rgb(172, 162, 147)' },
+    { url: './imgs/bg04.png', title: 'Europe potato starch', color: 'rgb(172, 162, 147)' },
 ];
 
 function updateSlider1() {
@@ -102,7 +103,7 @@ const sliderData2 = [
         url: './imgs/p01_hotpot.png', title: 'Hot Pot Noodle ', color: 'rgb(172, 162, 147)'
     },
     { url: './imgs/p02_thinNoodle.png', title: 'Potato Thin Noodle', color: 'rgb(172, 162, 147)' },
-    { url: './imgs/p03_coolJelly.png', title: 'Cool Jelly', color: 'rgb(172, 162, 147)' },
+    { url: './imgs/p03_coolJelly.png', title: 'Potato Jelly', color: 'rgb(172, 162, 147)' },
     { url: './imgs/p04_chiliOil.png', title: 'Chili Oil', color: 'rgb(172, 162, 147)' },
 
 
@@ -133,3 +134,30 @@ function updateSlider2() {
     currentIndex = (currentIndex + 1) % sliderData2.length;
 }
 
+
+function submitForm(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Create a new FormData object from the form
+    const formData = new FormData(document.getElementById('contactForm'));
+
+    // Send the form data to the server using fetch API
+    fetch('add.php', {
+        method: 'POST',
+        body: formData
+    })
+        .then(response => {
+            if (response.ok) {
+                // If the response is ok, show the success message
+                alert('Submission completed');
+                document.getElementById('contactForm').reset(); // Clear the form
+            } else {
+                // If there's an error, show an error message
+                alert('Submission failed');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('An unexpected error occurred');
+        });
+}
