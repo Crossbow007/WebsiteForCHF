@@ -88,8 +88,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-
-
 #burger-menu {
     display: none;
     /* Hidden by default */
@@ -131,8 +129,6 @@ footer {
     color: #862633;
     text-align: center;
     padding: 0%;
-
-
 }
 
 #contactText p {
@@ -140,13 +136,11 @@ footer {
     margin-bottom: 60px;
 }
 
-
 .productsGroup,
 #recipeGroup,
 .ContactUsGroup {
     display: flex;
     background: #ffffff;
-
 }
 
 #productName,
@@ -154,7 +148,6 @@ footer {
 #contactName {
     background: #f2e9db;
     color: #862633;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -167,8 +160,6 @@ footer {
     background-color: #ffffff;
 }
 
-
-
 #product01Img,
 #product02Img,
 #product03Img,
@@ -178,13 +169,8 @@ footer {
 #recipe03Img,
 #recipe04Img,
 #recipe05Img {
-    /* margin-left: 20%; */
-    /* Optional: Add styles for each individual div */
-    /* flex: 1; */
-    /* display: flex; */
     text-align: center;
     width: 30vw;
-
 }
 
 #product01Text,
@@ -198,21 +184,11 @@ footer {
 #recipe05Text {
     color: #862633;
     margin-top: 3%;
-    margin-left: 7%;
-    margin-right: 10%;
-
-    /* Optional: Add styles for each individual div */
-    /* flex: 1; */
+    margin-left: 9%;
+    margin-right: 7%;
     display: flex;
     text-align: left;
     width: 70vw;
-}
-
-#contactImg {
-    margin-left: 20%;
-    text-align: center;
-    width: 50vw;
-
 }
 
 #contactText {
@@ -220,9 +196,6 @@ footer {
     margin-top: 10%;
     margin-left: 5%;
     margin-right: 10%;
-
-    /* Optional: Add styles for each individual div */
-    /* flex: 1; */
     display: flex;
     text-align: left;
     width: 50vw;
@@ -234,140 +207,6 @@ h3 {
     margin-right: 10%;
 }
 
-.sendMsg {
-    background: #ffffff;
-    color: #862633;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10vh;
-}
-
-/*CONTACT US*/
-/*Box for name and email section in contact us form*/
-.nameEmail {
-    width: 20%;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 10px;
-}
-
-.nameEmail label {
-    flex-basis: 20%;
-    text-align: right;
-    margin-right: 10px;
-}
-
-.nameEmail input,
-.nameEmail textarea {
-    flex-grow: 1;
-    /* Allow input and textarea to grow and fill available space */
-    border-radius: 7px;
-    /* Keep the border-radius consistent */
-    padding: 1.5em;
-    /* Consistent padding */
-    height: 22px;
-    /* Set a default height */
-}
-
-.nameEmail textarea {
-    width: 100%;
-    height: 10em;
-}
-
-/*The box for the entire contact us form BOX.*/
-.contactUs {
-    background-color: ffffff;
-    align-items: center;
-    /* border-radius: 30px; to get those lovely rounded corners */
-}
-
-/*separate rules for the form itself*/
-.contactUs form {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    color: black;
-}
-
-input[type="submit"] {
-    background-color: #862633;
-    color: white;
-    font-size: large;
-    border: none;
-    border-radius: 0.5em;
-    padding: 1em;
-    cursor: pointer;
-    width: auto;
-    max-width: 200px;
-    margin-bottom: 2em;
-}
-
-input[type="submit"]:hover {
-    opacity: 0.8;
-}
-
-.message {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.message label {
-    margin-bottom: 5px;
-
-}
-
-
-/*ADMIN LOGIN*/
-/*LOGIN PAGE */
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-.container {
-    max-width: 300px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-}
-
-.nameEmail textarea {
-    width: 100%;
-    /* Set the width of the textarea, you can adjust as needed */
-    height: 150px;
-    /* Set the height of the textarea, you can adjust as needed */
-    resize: vertical;
-    /* Allow vertical resizing */
-}
-
-.submitButton input {
-    width: 160px;
-    /* Set the width of the button, you can adjust as needed */
-    height: 40px;
-    /* Set the height of the button, you can adjust as needed */
-    /* Additional styling for the button */
-    background-color: #862633;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: smaller;
-}
-
-.submitButton input:hover {
-    background-color: #cf5767;
-    /* Change the background color on hover */
-}
-
-
-
 .database-view {
     margin: 50px auto;
 }
@@ -376,8 +215,6 @@ body {
     float: right;
     padding-right: 2%;
 }
-
-
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
@@ -419,11 +256,90 @@ body {
     color: #862633;
 }
 
+/* .fieldsettop {
+    border-radius: 0.75em;
+    color: #862633;
+    margin-top: 0.5em;
+    background-color: #f2e9db
+} */
+
+.submitButton input {
+    width: 160px;
+    /* Set the width of the button, you can adjust as needed */
+    height: 40px;
+    /* Set the height of the button, you can adjust as needed */
+    /* Additional styling for the button */
+    background-color: #862633;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: smaller;
+
+}
+
+.submitButton input:hover {
+    background-color: #cf5767;
+    /* Change the background color on hover */
+}
+
+.submitButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    /* Adjust the margin as needed */
+}
+
+.sendMsg {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    /* Adjust the margin as needed */
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Align items to the start (top) */
+    margin-bottom: 10px;
+    /* Adjust margin as needed */
+}
+
+.message label {
+    margin-bottom: 5px;
+}
+
+.message textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.slider-indicator,
+.slider-indicator1,
+.slider-indicator2 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.textStyleInHomePage {
+    font-size: larger;
+    font-weight: bold;
+    color: #862633;
+}
+
 .fieldsettop {
     border-radius: 0.75em;
     color: #862633;
     margin-top: 0.5em;
     background-color: #f2e9db;
+    width: 100%
 }
 
 .divlevel1 {
@@ -486,120 +402,4 @@ body {
     font-size: x-large;
     font-weight: bolder;
     color: #862633;
-}
-
-
-/* pictures */
-* {
-    box-sizing: border-box;
-}
-
-.slider {
-    width: 560px;
-    height: 400px;
-    overflow: hidden;
-}
-
-
-
-
-.slider-wrapper,
-.slider-wrapper1,
-.slider-wrapper2 {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 320px;
-}
-
-.slider-wrapper img,
-.slider-wrapper1 img {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-
-.slider-wrapper2 img {
-    width: 40%;
-    height: 90%;
-    display: block;
-
-
-}
-
-
-
-.slider-footer,
-.slider-footer1,
-.slider-footer2 {
-    height: 80px;
-    background-color: rgb(100, 67, 68);
-    padding: 12px 12px 0 12px;
-    position: relative;
-}
-
-.slider-footer .toggle {
-    position: absolute;
-    right: 0;
-    top: 12px;
-    display: flex;
-}
-
-.slider-footer .toggle button,
-.slider-footer1 .toggle button,
-.slider-footer2 .toggle button {
-    margin-right: 12px;
-    width: 28px;
-    height: 28px;
-    appearance: none;
-    border: none;
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.slider-footer .toggle button:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.slider-footer p,
-.slider-footer1 p,
-.slider-footer2 p {
-    margin: 0;
-    color: #fff;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.slider-indicator,
-.slider-indicator1,
-.slider-indicator2 {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-.slider-indicator li,
-.slider-indicator1 li,
-.slider-indicator2 li {
-    width: 8px;
-    height: 8px;
-    margin: 4px;
-    border-radius: 50%;
-    background: #fff;
-    cursor: pointer;
-}
-
-.slider-indicator li.active,
-.slider-indicator1 li.active,
-.slider-indicator2 li.active {
-    width: 12px;
-    height: 12px;
-    opacity: 1;
 }
