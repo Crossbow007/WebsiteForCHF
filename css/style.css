@@ -45,16 +45,16 @@ header {
 }
 
 .navGroup {
-    font-size: 1.17em;
+    font-size: large;
     font-weight: bold;
     background: #ffffff;
     color: #862633;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    padding: 0%;
     margin-top: 30px;
-    display: flex;
+
     justify-content: space-between;
     align-items: center;
 }
@@ -139,7 +139,7 @@ footer {
 .productsGroup,
 #recipeGroup,
 .ContactUsGroup {
-    display: flex;
+    display: block;
     background: #ffffff;
 }
 
@@ -170,7 +170,7 @@ footer {
 #recipe04Img,
 #recipe05Img {
     text-align: center;
-    width: 30vw;
+    width: 40vw;
 }
 
 #product01Text,
@@ -183,28 +183,52 @@ footer {
 #recipe04Text,
 #recipe05Text {
     color: #862633;
-    margin-top: 3%;
-    margin-left: 9%;
+    margin-top: 2%;
+    margin-left: 7%;
     margin-right: 7%;
+    margin-bottom: 2%;
     display: flex;
     text-align: left;
     width: 70vw;
+
+}
+
+#product00Text {
+    color: #862633;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    text-align: left;
+    width: 100vw;
+}
+
+.ContactUsGroup {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+}
+
+#contactImg {
+    /* text-align: center; */
+    width: 50vw;
+    margin-left: 15%;
+    margin-right: -2%;
 }
 
 #contactText {
     color: #862633;
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-right: 10%;
-    display: flex;
+    margin-top: 2%;
+    margin-left: -7%;
+
     text-align: left;
     width: 50vw;
 }
 
 h3 {
-    text-align: justify;
-    margin-left: 10%;
-    margin-right: 10%;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .database-view {
@@ -216,38 +240,7 @@ h3 {
     padding-right: 2%;
 }
 
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    #company-name {
-        display: none;
-        /* Hide company name on mobile */
-    }
 
-    #burger-menu {
-        display: block;
-        margin-right: -70%;
-    }
-
-    nav ul {
-        flex-direction: column;
-        position: absolute;
-        top: 20%;
-        left: -100%;
-        width: 100%;
-        background-color: #fff;
-        transition: left 0.3s;
-
-    }
-
-    nav ul li {
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    nav ul li a {
-        color: #862633;
-    }
-}
 
 /* for index page --Xiaowei Wang*/
 .textStyleInHomePage {
@@ -264,6 +257,7 @@ h3 {
 } */
 
 .submitButton input {
+    /* margin-left: 10%; */
     width: 160px;
     /* Set the width of the button, you can adjust as needed */
     height: 40px;
@@ -284,8 +278,10 @@ h3 {
 }
 
 .submitButton {
+
     display: flex;
     justify-content: center;
+    /* margin-left: 10%; */
     margin-top: 20px;
     margin-bottom: 30px;
     /* Adjust the margin as needed */
@@ -298,7 +294,13 @@ h3 {
     /* Adjust the margin as needed */
 }
 
+label {
+
+    margin-left: 19%;
+}
+
 .message {
+    margin-left: 10%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -308,11 +310,13 @@ h3 {
 }
 
 .message label {
+    margin-left: 10%;
     margin-bottom: 5px;
 }
 
 .message textarea {
-    width: 100%;
+    margin-left: 10%;
+    width: 60%;
     padding: 8px;
     box-sizing: border-box;
     resize: vertical;
@@ -336,10 +340,10 @@ h3 {
 
 .fieldsettop {
     border-radius: 0.75em;
-    color: #862633;
+    /* color: #862633; */
     margin-top: 0.5em;
     background-color: #f2e9db;
-    width: 100%
+    width: 93%
 }
 
 .divlevel1 {
@@ -348,15 +352,13 @@ h3 {
     flex-wrap: wrap;
     margin-top: 1em;
     margin-bottom: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
+
     color: #862633;
 }
 
 .divlevel2-left {
     /* border: 0.2 solid blueviolet; */
     flex: 1;
-    margin-right: 1em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -365,7 +367,7 @@ h3 {
 
 .divlevel2-right {
     /* border: 0.2 solid blueviolet; */
-    flex: 3;
+    flex: 1;
     color: #862633;
 }
 
@@ -377,29 +379,65 @@ h3 {
 }
 
 #introductionforCHF {
-    font-size: x-large;
+
     color: #862633;
 }
 
-.imgstyleA {
-    height: 20em;
-    width: 20em;
+img {
+    height: auto;
+    width: 300px;
 }
 
-.imgstyleB {
-    height: 8.5em;
-    width: 8.5em;
-    flex: 1;
-}
-
-.imgstyleC {
-    height: 14em;
-    width: 5em;
-    flex: 1;
-}
 
 .producttext {
     font-size: x-large;
     font-weight: bolder;
     color: #862633;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+
+    #company-name {
+        display: none;
+        /* Hide company name on mobile */
+    }
+
+    #burger-menu {
+        display: block;
+        margin-right: auto;
+    }
+
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        left: -100%;
+        width: 100%;
+        background-color: #fff;
+        transition: left 0.3s;
+
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        color: #862633;
+    }
+
+    .divlevel1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+        color: #862633;
+    }
+
+
 }
