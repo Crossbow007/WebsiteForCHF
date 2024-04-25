@@ -439,5 +439,15 @@ img {
         color: #862633;
     }
 
+    #contactImg {
+        display: none;
+    }
 
+    #contactText {
+        color: #862633;
+        margin-top: 2%;
+        margin-left: 5%;
+        text-align: left;
+        width: 100vw;
+    }
 }
