@@ -204,23 +204,25 @@ footer {
 
 .ContactUsGroup {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
 
 }
 
 #contactImg {
     /* text-align: center; */
+
     width: 50vw;
-    margin-left: 20%;
-    margin-right: -2%;
+
+    align-self: center;
 }
 
 #contactText {
     color: #862633;
     margin-top: 2%;
-    margin-left: -7%;
-
+    margin-left: 15%;
+    align-content: center;
+    align-self: center;
     text-align: left;
     width: 50vw;
 }
