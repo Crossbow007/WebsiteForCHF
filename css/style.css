@@ -212,7 +212,7 @@ footer {
 #contactImg {
     /* text-align: center; */
     width: 50vw;
-    margin-left: 15%;
+    margin-left: 20%;
     margin-right: -2%;
 }
 
@@ -406,6 +406,7 @@ img {
     #burger-menu {
         display: block;
         margin-right: auto;
+        margin-left: auto;
     }
 
 
@@ -449,5 +450,16 @@ img {
         margin-left: 5%;
         text-align: left;
         width: 100vw;
+    }
+
+    #logo-left img {
+        display: flex;
+        align-items: left;
+
+        margin-left: 20px;
+        margin-right: auto;
+        width: 40px;
+        height: 40px;
+
     }
 }
