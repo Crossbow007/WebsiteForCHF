@@ -407,8 +407,11 @@ img {
 
     #burger-menu {
         display: block;
-        margin-right: auto;
-        margin-left: auto;
+        /* align-content: right;
+        align-items: right;*/
+        align-self: right;
+        margin-right: -250px;
+
     }
 
 
@@ -458,10 +461,11 @@ img {
         display: flex;
         align-items: left;
 
-        margin-left: 20px;
-        margin-right: auto;
-        width: 40px;
-        height: 40px;
+        margin-left: 25px;
+        /*
+        margin-right: 150px; */
+        width: 50px;
+        height: 50px;
 
     }
 }
