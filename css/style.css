@@ -23,7 +23,9 @@ header {
 #nav-list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-left: -15%;
+    margin-right: 5%;
+    align-self: left;
 }
 
 #nav-list li {
@@ -38,9 +40,9 @@ header {
 }
 
 #company-name {
-    margin-left: 50px;
+    margin-left: 10px;
     font-weight: bolder;
-    font-size: 2em;
+    font-size: x-large;
     text-align: center;
 }
 
@@ -169,7 +171,9 @@ footer {
 #recipe03Img,
 #recipe04Img,
 #recipe05Img {
-    margin-left: 20%;
+    /* display: flex; */
+    margin-left: 0%;
+    margin-right: 1%;
     text-align: center;
     /* width: 30vw; */
 }
@@ -185,23 +189,16 @@ footer {
 #recipe05Text {
     color: #862633;
     margin-top: 2%;
-    margin-left: 1%;
-    margin-right: 7%;
+    margin-left: 10%;
+    margin-right: 15%;
     margin-bottom: 2%;
-    display: flex;
+    /* display: flex; */
     text-align: left;
-    width: 80vw;
+    width: 95%;
 
 }
 
-#product00Text {
-    color: #862633;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    display: flex;
-    text-align: left;
-    width: 100vw;
-}
+
 
 .ContactUsGroup {
     display: flex;
@@ -345,7 +342,7 @@ label {
     /* color: #862633; */
     margin-top: 0.5em;
     background-color: #f2e9db;
-    width: 93%
+    width: 95vw;
 }
 
 .divlevel1 {
@@ -360,7 +357,7 @@ label {
 
 .divlevel2-left {
     /* border: 0.2 solid blueviolet; */
-    flex: 1;
+    flex: 0.4;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -383,6 +380,8 @@ label {
 #introductionforCHF {
 
     color: #862633;
+
+
 }
 
 img {
@@ -399,6 +398,7 @@ img {
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
+
 
     #company-name {
         display: none;
